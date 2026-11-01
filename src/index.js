@@ -11,11 +11,25 @@ function switchPage(loadPage){
 }
 
 loadHome();
+const buttons = document.querySelectorAll(".nav-btn");
 
-document.getElementById("home-btn").addEventListener("click", () => switchPage(loadHome));
+document.getElementById("home-btn").addEventListener("click", (e) => {
+    buttons.forEach(btn => btn.classList.remove("active"));
+    e.currentTarget.classList.add("active");
+
+    switchPage(loadHome);
+});
 
 
-document.getElementById("menu-btn").addEventListener("click", () => switchPage(loadMenu));
+document.getElementById("menu-btn").addEventListener("click", (e) => {
+    buttons.forEach(btn => btn.classList.remove("active"));
+    e.currentTarget.classList.add("active");
+    switchPage(loadMenu)
+});
 
 
-document.getElementById("contact-btn").addEventListener("click", () => switchPage(loadContact));
+document.getElementById("contact-btn").addEventListener("click", (e) => {
+    buttons.forEach(btn => btn.classList.remove("active"));
+    e.currentTarget.classList.add("active");
+    switchPage(loadContact)
+});
