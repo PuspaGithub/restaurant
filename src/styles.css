@@ -7,6 +7,7 @@ body {
     font-family: 'Inter', sans-serif; 
     background-color: #FFFDF7;
 }
+/* Start of Header and Navigation */
 h1, h2, .logo { font-family: 'Bricolage Grotesque', sans-serif; }
 
 .logo {
@@ -47,6 +48,9 @@ h1, h2, .logo { font-family: 'Bricolage Grotesque', sans-serif; }
     border-color: #F2C14E;
     font-weight: 700;
 }
+/* End of Header and Navigation */
+
+/* Start of Home page */
 
 .hero {
     margin-top: 30px;
@@ -56,12 +60,12 @@ h1, h2, .logo { font-family: 'Bricolage Grotesque', sans-serif; }
 }
 
 .breakfast {
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     gap: 5px;
     color: #6B5A1E;
     font-weight: 700;
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
 }
 
@@ -153,3 +157,89 @@ h1, h2, .logo { font-family: 'Bricolage Grotesque', sans-serif; }
     padding: 30px;
     text-align: center;
 }
+/* End of Home Page */
+
+/* Start of Contact Page */
+
+.contact-page {
+    padding: 30px;
+}
+
+.contact-heading {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #1F3D2B;
+}
+
+.contact-page p {
+    font-size: 1.5rem;
+}
+
+.findUs-Map {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.address-phone {
+    padding: 20px;
+    border-radius: 40px;
+    border: 1px solid #afafac;
+}
+
+.find-us {
+    color: #1F3D2B;
+    font-size: 2.5rem;
+}
+
+.address {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.address-phone p{
+    font-size: 1.25rem;
+}
+
+.phoneInfo {
+    margin-bottom: 20px;
+}
+
+.address, .phoneInfo {
+    margin-left: 30px;
+}
+
+.address p:nth-of-type(1){
+    margin-top: 15px;
+}
+
+.hours {
+    background-color: #1F3D2B;
+    color: #FFFDF7;
+    padding: 40px;
+    line-height: 50px;
+    border-radius: 40px;
+    margin-top: 40px;
+}
+
+.hours td{
+    border-bottom: 1px solid #FFFDF7;
+    width: 70%;
+}
+
+.hours h1{
+    color: #F2C14E;
+}
+
+.map {
+    padding: 40px;
+    border: 1px solid #a5a4a2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 40px;
+}
+
+/* End of Contact Page */
