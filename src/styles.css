@@ -154,6 +154,8 @@ h1, h2, .logo { font-family: 'Bricolage Grotesque', sans-serif; }
 }
 
 .footer {
+    color: #a5a4a2;
+    font-size: 0.75rem;
     padding: 30px;
     text-align: center;
 }
@@ -180,6 +182,7 @@ h1, h2, .logo { font-family: 'Bricolage Grotesque', sans-serif; }
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .address-phone {
@@ -225,7 +228,7 @@ h1, h2, .logo { font-family: 'Bricolage Grotesque', sans-serif; }
 
 .hours td{
     border-bottom: 1px solid #FFFDF7;
-    width: 70%;
+    width: 80%;
 }
 
 .hours h1{

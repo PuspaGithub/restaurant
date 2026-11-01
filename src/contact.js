@@ -71,7 +71,7 @@ function findUsMap() {
             <td>8am - 4pm</td>
         </tr>
         <tr>
-            <td>Sunday<td>
+            <td>Sunday</td>
             <td>8am - 2pm</td>
         </tr>
     `
@@ -86,7 +86,7 @@ function findUsMap() {
 
     findUsMap.append(contactInfo, map);
 
-    return findUsMap
+    return findUsMap;
 }
 
 function hr() {
@@ -108,7 +108,7 @@ export default function loadContact() {
     const contactPage = document.createElement("div")
     contactPage.classList.add("contact-page");
 
-    contactPage.append(contactHeroText(), findUsMap(), hr(), footer());
+    contactPage.append(contactHeroText(), findUsMap());
     
     content.append(contactPage);
 }

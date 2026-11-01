@@ -126,7 +126,7 @@ export default function loadHome() {
 
     content.textContent = "";
 
-    content.append(createHero(), homeAboutCompany(), customerTestimoni(), hr(), footer());
+    content.append(createHero(), homeAboutCompany(), customerTestimoni());
     
 }
 
