@@ -25,9 +25,17 @@ function createHero () {
     herobtn1.classList.add("hero-btn", "btn-active");
     herobtn1.textContent = "See the menu";
 
+    herobtn1.addEventListener("click", () => {
+        document.getElementById("menu-btn").click();
+    })
+
     const herobtn2 = document.createElement("button");
     herobtn2.classList.add("hero-btn");
     herobtn2.textContent = "Find Us";
+    
+    herobtn2.addEventListener("click", () => {
+        document.getElementById("contact-btn").click();
+    })
 
     heroBtns.append(herobtn1, herobtn2);
 
